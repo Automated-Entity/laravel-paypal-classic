@@ -21,7 +21,7 @@ class PaymentsTest extends TestCase
 
 		$expectedParams = 'FYXMPQTX4JC9N';
 
-		$expectedMethod = 'showBatchPayoutDetails';
+		$expectedMethod = '';
 
 		$mockClient = $this->mock_client($expectedResponse, $expectedMethod, true);
 
