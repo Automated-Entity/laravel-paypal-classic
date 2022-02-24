@@ -16,7 +16,7 @@ trait Payments
 	 * @return array|\Psr\Http\Message\StreamInterface|string
 	 */
 	public function listBillingPlans(int $page = 1, int $size = 20, bool $totals = true)
-	{
+	: \Psr\Http\Message\StreamInterface|array|string {
 		$this->apiEndPoint = "v1/payments/billing-plans?page={$page}&page_size={$size}&total_required=".($totals) ? 'true' : 'false';
 
 		$this->verb = 'get';
