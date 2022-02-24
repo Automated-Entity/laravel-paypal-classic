@@ -8,27 +8,28 @@ trait PayPalAPI
     use PayPalAPI\CatalogProducts;
     use PayPalAPI\Disputes;
     use PayPalAPI\DisputesActions;
-    use PayPalAPI\Identity;
-    use PayPalAPI\Invoices;
-    use PayPalAPI\InvoicesSearch;
-    use PayPalAPI\InvoicesTemplates;
-    use PayPalAPI\Orders;
-    use PayPalAPI\PartnerReferrals;
-    use PayPalAPI\PaymentExperienceWebProfiles;
-    use PayPalAPI\PaymentAuthorizations;
-    use PayPalAPI\PaymentCaptures;
-    use PayPalAPI\PaymentRefunds;
-    use PayPalAPI\Payouts;
-    use PayPalAPI\ReferencedPayouts;
-    use PayPalAPI\BillingPlans;
-    use PayPalAPI\Subscriptions;
-    use PayPalAPI\Reporting;
-    use PayPalAPI\WebHooks;
-    use PayPalAPI\WebHooksVerification;
-    use PayPalAPI\WebHooksEvents;
+	use PayPalAPI\Identity;
+	use PayPalAPI\Invoices;
+	use PayPalAPI\InvoicesSearch;
+	use PayPalAPI\InvoicesTemplates;
+	use PayPalAPI\Orders;
+	use PayPalAPI\PartnerReferrals;
+	use PayPalAPI\PaymentExperienceWebProfiles;
+	use PayPalAPI\PaymentAuthorizations;
+	use PayPalAPI\PaymentCaptures;
+	use PayPalAPI\PaymentRefunds;
+	use PayPalAPI\Payments;
+	use PayPalAPI\Payouts;
+	use PayPalAPI\ReferencedPayouts;
+	use PayPalAPI\BillingPlans;
+	use PayPalAPI\Subscriptions;
+	use PayPalAPI\Reporting;
+	use PayPalAPI\WebHooks;
+	use PayPalAPI\WebHooksVerification;
+	use PayPalAPI\WebHooksEvents;
 
-    /**
-     * Login through PayPal API to get access token.
+	/**
+	 * Login through PayPal API to get access token.
      *
      * @throws \Throwable
      *
